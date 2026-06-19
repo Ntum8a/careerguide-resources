@@ -136,7 +136,7 @@ export default async function ResourcePage({ params }: Props) {
       )}
 
       {/* Cross-link to opportunities */}
-      <div className="mt-10 p-5 bg-[var(--color-brand-teal-light)] rounded-xl border border-[var(--color-brand-teal)]/20">
+      <div className="mt-10 p-5 bg-[var(--color-brand-light)] rounded-xl border border-[var(--color-brand)]/20">
         <p className="text-sm font-medium text-[var(--color-brand-teal-dark)]">
           Ready to put this into practice?{' '}
           <Link href="/hidden-opportunities" className="font-bold underline hover:no-underline">

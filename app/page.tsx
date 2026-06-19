@@ -18,13 +18,13 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
               Everything you need to launch your career
             </h1>
-            <p className="text-lg md:text-xl text-teal-100 leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8">
               Free guides, CV templates, interview prep, and directories of opportunities that most people never find. No paywalls. No sign-up required.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/resources"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[var(--color-brand-teal-dark)] font-bold rounded-lg hover:bg-teal-50 transition-colors text-sm"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[var(--color-brand-teal-dark)] font-bold rounded-lg hover:bg-[var(--color-brand-light)] transition-colors text-sm"
               >
                 Browse Free Resources
               </Link>
@@ -40,7 +40,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[var(--color-body)] text-white">
+      <section className="bg-[var(--color-dark-section-deep)] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-wrap justify-center md:justify-start gap-8">
             {[
@@ -140,14 +140,14 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-[var(--color-brand-teal)] rounded-2xl p-8 md:p-12 text-white text-center">
+        <div className="bg-[var(--color-dark-section)] rounded-2xl p-8 md:p-12 text-white text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">Not sure where to start?</h2>
-          <p className="text-teal-100 mb-6 max-w-md mx-auto">
+          <p className="text-white/70 mb-6 max-w-md mx-auto">
             Download the Foundation Kit — the complete starting point for your career journey.
           </p>
           <Link
             href="/resources/foundation-kit"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[var(--color-brand-teal-dark)] font-bold rounded-lg hover:bg-teal-50 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-accent)] text-[var(--color-dark-section)] font-bold rounded-lg hover:opacity-90 transition-opacity"
           >
             ⬇ Download Foundation Kit — Free
           </Link>

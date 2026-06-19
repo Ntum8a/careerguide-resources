@@ -1,30 +1,66 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand colours */
-  --color-brand-teal: #0D9488;
-  --color-brand-teal-light: #CCFBF1;
-  --color-brand-teal-dark: #0F766E;
-  --color-brand-teal-hover: #0B8278;
+  /* Brand — matches www.careerguide.network */
+  --color-brand: #3C3AFF;
+  --color-brand-light: #E3E3FF;
+  --color-brand-dark: #2D2BE0;
+  --color-brand-hover: #3432F0;
+  --color-brand-teal: #3C3AFF;
+  --color-brand-teal-light: #E3E3FF;
+  --color-brand-teal-dark: #2D2BE0;
+  --color-brand-teal-hover: #3432F0;
+
+  /* Dark sections — deep purple from main site */
+  --color-dark-section: #372875;
+  --color-dark-section-deep: #1A1040;
+
+  /* Accent — mint green from main site hero */
+  --color-accent: #4BFFBB;
 
   /* Category colours */
-  --color-cat-getting-started: #0D9488;
-  --color-cat-cv: #3B82F6;
-  --color-cat-interview: #D97706;
+  --color-cat-getting-started: #3C3AFF;
+  --color-cat-cv: #7C3AED;
+  --color-cat-interview: #4BFFBB;
   --color-cat-money: #16A34A;
-  --color-cat-future: #7C3AED;
+  --color-cat-future: #EC4899;
 
   /* Neutral */
-  --color-surface: #F8FAFC;
-  --color-border: #E2E8F0;
-  --color-muted: #64748B;
-  --color-body: #1E293B;
+  --color-surface: #F5F5FF;
+  --color-border: #DDDDF5;
+  --color-muted: #6B6B99;
+  --color-body: #171717;
 
-  /* Typography */
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  /* Typography — match main site base, upgrade to Inter for readability */
+  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
 
   /* Radius */
+  --radius-card: 0.75rem;
+  --radius-badge: 9999px;
+  --radius-btn: 0.5rem;
+}
+
+:root {
+  --color-brand: #3C3AFF;
+  --color-brand-light: #E3E3FF;
+  --color-brand-dark: #2D2BE0;
+  --color-brand-hover: #3432F0;
+  --color-brand-teal: #3C3AFF;
+  --color-brand-teal-light: #E3E3FF;
+  --color-brand-teal-dark: #2D2BE0;
+  --color-brand-teal-hover: #3432F0;
+  --color-dark-section: #372875;
+  --color-dark-section-deep: #1A1040;
+  --color-accent: #4BFFBB;
+  --color-cat-getting-started: #3C3AFF;
+  --color-cat-cv: #7C3AED;
+  --color-cat-interview: #059669;
+  --color-cat-money: #16A34A;
+  --color-cat-future: #EC4899;
+  --color-surface: #F5F5FF;
+  --color-border: #DDDDF5;
+  --color-muted: #6B6B99;
+  --color-body: #171717;
   --radius-card: 0.75rem;
   --radius-badge: 9999px;
   --radius-btn: 0.5rem;
@@ -65,6 +101,6 @@
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.06);
   }
   .card-shadow-hover {
-    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 0.10), 0 2px 4px -1px rgb(0 0 0 / 0.06);
+    box-shadow: 0 4px 12px 0 rgb(60 58 255 / 0.12), 0 2px 4px -1px rgb(0 0 0 / 0.06);
   }
 }

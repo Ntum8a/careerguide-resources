@@ -211,7 +211,7 @@ export default async function SubcategoryPage({ params }: Props) {
       />
 
       {/* Related resource cross-link */}
-      <div className="mt-12 p-5 bg-[var(--color-brand-teal-light)] rounded-xl border border-[var(--color-brand-teal)]/20">
+      <div className="mt-12 p-5 bg-[var(--color-brand-light)] rounded-xl border border-[var(--color-brand)]/20">
         <p className="text-sm font-medium text-[var(--color-brand-teal-dark)]">
           Preparing your application?{' '}
           <Link href="/resources" className="font-bold underline hover:no-underline">

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-body)] text-white mt-auto">
+    <footer className="bg-[var(--color-dark-section-deep)] text-white mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <p className="text-slate-500 text-xs">
             © {new Date().getFullYear()} CareerGuide. All rights reserved.
           </p>

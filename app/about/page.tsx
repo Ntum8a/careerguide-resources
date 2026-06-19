@@ -67,12 +67,12 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="bg-[var(--color-brand-teal-light)] rounded-xl p-6 border border-[var(--color-brand-teal)]/20">
-          <h2 className="text-xl font-bold text-[var(--color-brand-teal-dark)] mb-2">From the founder</h2>
-          <blockquote className="text-[var(--color-brand-teal-dark)] leading-relaxed italic">
+        <div className="bg-[var(--color-dark-section)] rounded-xl p-6 border border-white/10">
+          <h2 className="text-xl font-bold text-white mb-2">From the founder</h2>
+          <blockquote className="text-white leading-relaxed italic">
             &ldquo;CareerGuide was created to give early talent the knowledge, experience, and high-quality career training I wish I had earlier, helping them build strong foundations and maximise their chances of success.&rdquo;
           </blockquote>
-          <p className="text-sm font-semibold text-[var(--color-brand-teal-dark)] mt-3">
+          <p className="text-sm font-semibold text-white mt-3">
             — Jerome Ntumba, Founder &amp; CEO, CareerGuide
           </p>
         </div>
