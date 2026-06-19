@@ -7,7 +7,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="text-[var(--color-brand-teal)] font-bold text-xl mb-3">CareerGuide</div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-white.png" alt="CareerGuide" className="h-9 w-auto mb-3" />
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Free resources, courses, and opportunities to help young people become work-ready and navigate their career path with confidence.
             </p>

@@ -24,10 +24,9 @@ export default function Nav() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-white font-bold text-xl tracking-tight">
-              CareerGuide
-            </span>
+          <Link href="/" className="flex items-center gap-3 shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-white.png" alt="CareerGuide" className="h-8 w-auto" />
             <span className="hidden sm:inline text-xs font-semibold bg-white/10 text-[var(--color-accent)] px-2 py-0.5 rounded-full">
               Resources
             </span>

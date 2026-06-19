@@ -1,38 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand — matches www.careerguide.network */
-  --color-brand: #3C3AFF;
-  --color-brand-light: #E3E3FF;
-  --color-brand-dark: #2D2BE0;
-  --color-brand-hover: #3432F0;
-  --color-brand-teal: #3C3AFF;
-  --color-brand-teal-light: #E3E3FF;
-  --color-brand-teal-dark: #2D2BE0;
-  --color-brand-teal-hover: #3432F0;
+  /* Brand — CareerGuide Brand Kit v1.0 */
+  --color-brand: #2D2A6B;
+  --color-brand-light: #C8B8F5;
+  --color-brand-dark: #1E1B4B;
+  --color-brand-hover: #3D3A8B;
+  --color-brand-teal: #2D2A6B;
+  --color-brand-teal-light: #C8B8F5;
+  --color-brand-teal-dark: #1E1B4B;
+  --color-brand-teal-hover: #3D3A8B;
 
-  /* Dark sections — deep purple from main site */
-  --color-dark-section: #372875;
-  --color-dark-section-deep: #1A1040;
+  /* Dark sections */
+  --color-dark-section: #2D2A6B;
+  --color-dark-section-deep: #1A1840;
 
-  /* Accent — mint green from main site hero */
-  --color-accent: #4BFFBB;
+  /* Accents */
+  --color-accent: #2DCFC1;
+  --color-violet: #7A6AE8;
 
   /* Category colours */
-  --color-cat-getting-started: #3C3AFF;
-  --color-cat-cv: #7C3AED;
-  --color-cat-interview: #4BFFBB;
+  --color-cat-getting-started: #2D2A6B;
+  --color-cat-cv: #7A6AE8;
+  --color-cat-interview: #2DCFC1;
   --color-cat-money: #16A34A;
   --color-cat-future: #EC4899;
 
   /* Neutral */
-  --color-surface: #F5F5FF;
-  --color-border: #DDDDF5;
+  --color-surface: #F4F2FB;
+  --color-border: #E2DEFA;
   --color-muted: #6B6B99;
-  --color-body: #171717;
+  --color-body: #26282A;
 
-  /* Typography — match main site base, upgrade to Inter for readability */
-  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
+  /* Typography — Poppins per brand kit */
+  --font-sans: 'Poppins', Arial, Helvetica, sans-serif;
 
   /* Radius */
   --radius-card: 0.75rem;
@@ -41,26 +42,27 @@
 }
 
 :root {
-  --color-brand: #3C3AFF;
-  --color-brand-light: #E3E3FF;
-  --color-brand-dark: #2D2BE0;
-  --color-brand-hover: #3432F0;
-  --color-brand-teal: #3C3AFF;
-  --color-brand-teal-light: #E3E3FF;
-  --color-brand-teal-dark: #2D2BE0;
-  --color-brand-teal-hover: #3432F0;
-  --color-dark-section: #372875;
-  --color-dark-section-deep: #1A1040;
-  --color-accent: #4BFFBB;
-  --color-cat-getting-started: #3C3AFF;
-  --color-cat-cv: #7C3AED;
-  --color-cat-interview: #059669;
+  --color-brand: #2D2A6B;
+  --color-brand-light: #C8B8F5;
+  --color-brand-dark: #1E1B4B;
+  --color-brand-hover: #3D3A8B;
+  --color-brand-teal: #2D2A6B;
+  --color-brand-teal-light: #C8B8F5;
+  --color-brand-teal-dark: #1E1B4B;
+  --color-brand-teal-hover: #3D3A8B;
+  --color-dark-section: #2D2A6B;
+  --color-dark-section-deep: #1A1840;
+  --color-accent: #2DCFC1;
+  --color-violet: #7A6AE8;
+  --color-cat-getting-started: #2D2A6B;
+  --color-cat-cv: #7A6AE8;
+  --color-cat-interview: #2DCFC1;
   --color-cat-money: #16A34A;
   --color-cat-future: #EC4899;
-  --color-surface: #F5F5FF;
-  --color-border: #DDDDF5;
+  --color-surface: #F4F2FB;
+  --color-border: #E2DEFA;
   --color-muted: #6B6B99;
-  --color-body: #171717;
+  --color-body: #26282A;
   --radius-card: 0.75rem;
   --radius-badge: 9999px;
   --radius-btn: 0.5rem;
