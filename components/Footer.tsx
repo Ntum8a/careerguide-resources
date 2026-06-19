@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-4">
               <a
-                href="https://www.instagram.com/careerguide.network"
+                href="https://www.instagram.com/careerguideuk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors text-sm"
@@ -24,7 +24,7 @@ export default function Footer() {
               </a>
               <span className="text-slate-600">·</span>
               <a
-                href="https://www.linkedin.com/company/careerguide-network"
+                href="https://www.linkedin.com/company/careerguidenetwork/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors text-sm"
@@ -34,7 +34,7 @@ export default function Footer() {
               </a>
               <span className="text-slate-600">·</span>
               <a
-                href="https://www.tiktok.com/@careerguide.network"
+                href="https://www.tiktok.com/@careerguidenetwork"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors text-sm"
