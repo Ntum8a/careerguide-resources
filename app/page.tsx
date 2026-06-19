@@ -8,29 +8,35 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-[var(--color-brand-teal-dark)] to-[var(--color-brand-teal)] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-          <div className="max-w-2xl">
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/20 text-white mb-4">
+      {/* Hero — full viewport height */}
+      <section className="relative min-h-[92vh] flex items-center bg-[var(--color-dark-section-deep)] overflow-hidden">
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-dark-section-deep)] via-[var(--color-dark-section)] to-[var(--color-brand)] opacity-90" />
+        {/* Subtle geometric accent */}
+        <div className="absolute right-0 top-0 w-1/2 h-full opacity-10"
+          style={{ background: 'radial-gradient(ellipse at 80% 20%, #4BFFBB 0%, transparent 60%)' }} />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-[var(--color-accent)] mb-6 uppercase tracking-widest">
               Free for every student
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
-              Everything you need to launch your career
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-none mb-6 uppercase tracking-tight text-white">
+              Everything you need to{' '}
+              <span className="text-[var(--color-accent)]">launch your career</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-10 max-w-xl">
               Free guides, CV templates, interview prep, and directories of opportunities that most people never find. No paywalls. No sign-up required.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/resources"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[var(--color-brand-teal-dark)] font-bold rounded-lg hover:bg-[var(--color-brand-light)] transition-colors text-sm"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:opacity-90 transition-opacity text-sm uppercase tracking-wide"
               >
                 Browse Free Resources
               </Link>
               <Link
                 href="/hidden-opportunities"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/50 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors text-sm"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-colors text-sm uppercase tracking-wide"
               >
                 Find Hidden Opportunities
               </Link>
@@ -40,9 +46,9 @@ export default function HomePage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[var(--color-dark-section-deep)] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="flex flex-wrap justify-center md:justify-start gap-8">
+      <section className="bg-[var(--color-dark-section)] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-wrap justify-center md:justify-start gap-10">
             {[
               { value: '8', label: 'Free Resources' },
               { value: '10+', label: 'Learning Courses' },
@@ -50,8 +56,8 @@ export default function HomePage() {
               { value: '100%', label: 'Free to Access' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl font-bold text-[var(--color-brand-teal)]">{stat.value}</div>
-                <div className="text-xs text-slate-400 font-medium">{stat.label}</div>
+                <div className="text-3xl font-extrabold text-[var(--color-accent)]">{stat.value}</div>
+                <div className="text-xs text-white/50 font-medium uppercase tracking-wider mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -59,29 +65,32 @@ export default function HomePage() {
       </section>
 
       {/* Featured Resources */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex items-end justify-between mb-8">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-body)]">Start here</h2>
-            <p className="text-[var(--color-muted)] mt-1">The most popular free resources</p>
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-2">Most Popular</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--color-body)] uppercase tracking-tight">Start here</h2>
+            </div>
+            <Link href="/resources" className="text-sm font-semibold text-[var(--color-brand)] hover:underline shrink-0">
+              Browse all {allResources.length} →
+            </Link>
           </div>
-          <Link href="/resources" className="text-sm font-semibold text-[var(--color-brand-teal)] hover:underline shrink-0">
-            Browse all {allResources.length} →
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featured.map((resource) => (
-            <ResourceCard key={resource.slug} resource={resource} featured />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {featured.map((resource) => (
+              <ResourceCard key={resource.slug} resource={resource} featured />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Directory signposts */}
-      <section className="bg-[var(--color-surface)] border-y border-[var(--color-border)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-body)]">Explore opportunities</h2>
-            <p className="text-[var(--color-muted)] mt-2 max-w-xl mx-auto">
+      {/* Directory signposts — dark section */}
+      <section className="bg-[var(--color-dark-section-deep)] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="text-center mb-12">
+            <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-2">Curated Directories</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight">Explore opportunities</h2>
+            <p className="text-white/60 mt-3 max-w-xl mx-auto">
               Two curated directories of opportunities most young people never know about.
             </p>
           </div>
@@ -89,36 +98,36 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             <Link
               href="/learning-directory"
-              className="group bg-white rounded-[var(--radius-card)] border border-[var(--color-border)] card-shadow hover:border-[var(--color-brand-teal)] hover:card-shadow-hover transition-all p-6"
+              className="group bg-white/5 border border-white/10 rounded-2xl hover:border-[var(--color-accent)]/50 hover:bg-white/10 transition-all p-8"
             >
-              <div className="w-12 h-12 bg-[var(--color-brand-teal-light)] rounded-xl flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-[var(--color-accent)]/10 rounded-xl flex items-center justify-center mb-5 text-2xl">
                 📚
               </div>
-              <h3 className="font-bold text-xl text-[var(--color-body)] mb-2 group-hover:text-[var(--color-brand-teal)] transition-colors">
+              <h3 className="font-extrabold text-xl text-white mb-2 uppercase tracking-tight group-hover:text-[var(--color-accent)] transition-colors">
                 Free &amp; Low-Cost Learning Directory
               </h3>
-              <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-4">
+              <p className="text-white/50 text-sm leading-relaxed mb-5">
                 Curated courses and learning programmes — Google, freeCodeCamp, Barclays LifeSkills, and more. All free or affordable.
               </p>
-              <span className="text-sm font-semibold text-[var(--color-brand-teal)] group-hover:underline">
+              <span className="text-sm font-semibold text-[var(--color-accent)]">
                 Browse courses →
               </span>
             </Link>
 
             <Link
               href="/hidden-opportunities"
-              className="group bg-white rounded-[var(--radius-card)] border border-[var(--color-border)] card-shadow hover:border-[var(--color-brand-teal)] hover:card-shadow-hover transition-all p-6"
+              className="group bg-white/5 border border-white/10 rounded-2xl hover:border-[var(--color-accent)]/50 hover:bg-white/10 transition-all p-8"
             >
-              <div className="w-12 h-12 bg-[var(--color-brand-teal-light)] rounded-xl flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-[var(--color-accent)]/10 rounded-xl flex items-center justify-center mb-5 text-2xl">
                 🔍
               </div>
-              <h3 className="font-bold text-xl text-[var(--color-body)] mb-2 group-hover:text-[var(--color-brand-teal)] transition-colors">
+              <h3 className="font-extrabold text-xl text-white mb-2 uppercase tracking-tight group-hover:text-[var(--color-accent)] transition-colors">
                 Hidden Opportunities Directory
               </h3>
-              <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-4">
+              <p className="text-white/50 text-sm leading-relaxed mb-5">
                 Apprenticeships, insight programmes, scholarships, mentoring, and competitions that most people discover too late — or never.
               </p>
-              <span className="text-sm font-semibold text-[var(--color-brand-teal)] group-hover:underline">
+              <span className="text-sm font-semibold text-[var(--color-accent)]">
                 Find opportunities →
               </span>
             </Link>
@@ -129,7 +138,7 @@ export default function HomePage() {
               <Link
                 key={sub.slug}
                 href={`/hidden-opportunities/${sub.slug}`}
-                className="text-xs font-medium bg-white border border-[var(--color-border)] text-[var(--color-muted)] hover:border-[var(--color-brand-teal)] hover:text-[var(--color-brand-teal)] px-3 py-1.5 rounded-full transition-colors"
+                className="text-xs font-semibold bg-white/5 border border-white/10 text-white/60 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] px-4 py-2 rounded-full transition-colors uppercase tracking-wide"
               >
                 {sub.label}
               </Link>
@@ -139,17 +148,18 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-[var(--color-dark-section)] rounded-2xl p-8 md:p-12 text-white text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Not sure where to start?</h2>
-          <p className="text-white/70 mb-6 max-w-md mx-auto">
-            Download the Foundation Kit — the complete starting point for your career journey.
+      <section className="bg-[var(--color-dark-section)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Not sure where to start?</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 uppercase tracking-tight">Download the Foundation Kit</h2>
+          <p className="text-white/60 mb-8 max-w-md mx-auto">
+            The complete starting point for your career journey — free, instant download.
           </p>
           <Link
             href="/resources/foundation-kit"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-accent)] text-[var(--color-dark-section)] font-bold rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:opacity-90 transition-opacity uppercase tracking-wide text-sm"
           >
-            ⬇ Download Foundation Kit — Free
+            ⬇ Download Free
           </Link>
         </div>
       </section>

@@ -7,10 +7,9 @@ import { useState } from 'react'
 const links = [
   { href: '/', label: 'Home' },
   { href: '/resources', label: 'Resources' },
-  { href: '/learning-directory', label: 'Learning Directory' },
-  { href: '/hidden-opportunities', label: 'Hidden Opportunities' },
+  { href: '/learning-directory', label: 'Learning' },
+  { href: '/hidden-opportunities', label: 'Opportunities' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
 ]
 
 export default function Nav() {
@@ -21,15 +20,15 @@ export default function Nav() {
     href === '/' ? pathname === '/' : pathname.startsWith(href)
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-[var(--color-border)]">
+    <header className="sticky top-0 z-50 bg-[var(--color-dark-section-deep)] border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-[var(--color-brand-teal)] font-bold text-xl tracking-tight">
+            <span className="text-white font-bold text-xl tracking-tight">
               CareerGuide
             </span>
-            <span className="hidden sm:inline text-xs text-[var(--color-muted)] font-medium bg-[var(--color-brand-teal-light)] text-[var(--color-brand-teal-dark)] px-2 py-0.5 rounded-full">
+            <span className="hidden sm:inline text-xs font-semibold bg-white/10 text-[var(--color-accent)] px-2 py-0.5 rounded-full">
               Resources
             </span>
           </Link>
@@ -42,8 +41,8 @@ export default function Nav() {
                 href={link.href}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive(link.href)
-                    ? 'bg-[var(--color-brand-teal-light)] text-[var(--color-brand-teal-dark)]'
-                    : 'text-[var(--color-muted)] hover:text-[var(--color-body)] hover:bg-[var(--color-surface)]'
+                    ? 'bg-white/15 text-[var(--color-accent)]'
+                    : 'text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {link.label}
@@ -51,9 +50,19 @@ export default function Nav() {
             ))}
           </div>
 
+          {/* Contact CTA */}
+          <div className="hidden lg:block">
+            <Link
+              href="/contact"
+              className="px-4 py-2 rounded-full text-sm font-semibold bg-white text-[var(--color-dark-section-deep)] hover:bg-[var(--color-accent)] transition-colors"
+            >
+              Contact
+            </Link>
+          </div>
+
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 rounded-lg text-[var(--color-muted)] hover:bg-[var(--color-surface)]"
+            className="lg:hidden p-2 rounded-lg text-white/70 hover:text-white hover:bg-white/10"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -69,7 +78,7 @@ export default function Nav() {
 
         {/* Mobile menu */}
         {open && (
-          <div className="lg:hidden pb-4 border-t border-[var(--color-border)] mt-0 pt-2">
+          <div className="lg:hidden pb-4 border-t border-white/10 mt-0 pt-2">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -77,13 +86,20 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 className={`block px-3 py-2.5 rounded-lg text-sm font-medium mb-1 transition-colors ${
                   isActive(link.href)
-                    ? 'bg-[var(--color-brand-teal-light)] text-[var(--color-brand-teal-dark)]'
-                    : 'text-[var(--color-body)] hover:bg-[var(--color-surface)]'
+                    ? 'bg-white/15 text-[var(--color-accent)]'
+                    : 'text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="block mt-3 px-3 py-2.5 rounded-full text-sm font-semibold bg-white text-[var(--color-dark-section-deep)] text-center"
+            >
+              Contact
+            </Link>
           </div>
         )}
       </nav>
