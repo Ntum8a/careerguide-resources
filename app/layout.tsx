@@ -7,6 +7,9 @@ import Footer from '@/components/Footer'
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'uU6LSqauAITlmBgMUAVWzgX9s_zKR7hcUh0B9QTtv8o',
+  },
   title: {
     default: 'CareerGuide Resources — Free Career Tools for Young People',
     template: '%s | CareerGuide Resources',
