@@ -1,0 +1,172 @@
+{
+  "resources": [
+    {
+      "slug": "foundation-kit",
+      "title": "Foundation Kit",
+      "tagline": "The complete starting point for your career journey",
+      "category": "getting-started",
+      "categoryLabel": "Getting Started",
+      "format": "PDF Pack",
+      "description": "Everything you need to understand where you are, where you want to go, and how to get there. The perfect first step.",
+      "whatsInside": [
+        "Career planning framework",
+        "Self-assessment tool",
+        "Goal-setting template",
+        "First steps checklist"
+      ],
+      "whoIsItFor": "Students in Year 10 through to recent graduates who want to get serious about their career direction.",
+      "readTime": "15 min",
+      "pageCount": 12,
+      "downloadCount": 1240,
+      "fileName": "careerguide-foundation-kit-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-01-10",
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "slug": "cv-booster-guide",
+      "title": "CV Booster Guide",
+      "tagline": "Write a CV that actually gets read",
+      "category": "cv-applications",
+      "categoryLabel": "CV & Applications",
+      "format": "PDF Guide",
+      "description": "A practical, no-fluff guide to writing a CV that stands out — with real before-and-after examples.",
+      "whatsInside": [
+        "CV structure explained clearly",
+        "Common mistakes to avoid",
+        "Industry-specific tips",
+        "Before and after examples"
+      ],
+      "whoIsItFor": "Anyone writing their first CV or wanting to improve an existing one — school leavers, apprenticeship applicants, and graduates.",
+      "readTime": "10 min",
+      "pageCount": 8,
+      "downloadCount": 2180,
+      "fileName": "careerguide-cv-booster-guide-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-01-10",
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "slug": "cv-template-pack",
+      "title": "CV Template Pack",
+      "tagline": "Professional CV templates ready to fill in",
+      "category": "cv-applications",
+      "categoryLabel": "CV & Applications",
+      "format": "Template",
+      "description": "Three ATS-friendly CV templates in different styles — modern, classic, and minimal. Editable in Word and Google Docs.",
+      "whatsInside": [
+        "3 ATS-friendly CV templates",
+        "Modern, classic, and minimal designs",
+        "Editable in Word and Google Docs",
+        "Template usage guide"
+      ],
+      "whoIsItFor": "Students and graduates applying for jobs, apprenticeships, or work experience who want a professional starting point.",
+      "readTime": "5 min setup",
+      "pageCount": 6,
+      "downloadCount": 3420,
+      "fileName": "careerguide-cv-template-pack-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-01-10",
+      "featured": false,
+      "isNew": false
+    },
+    {
+      "slug": "cover-letter-pack",
+      "title": "Cover Letter Pack",
+      "tagline": "Five cover letter templates that get noticed",
+      "category": "cv-applications",
+      "categoryLabel": "CV & Applications",
+      "format": "Template Pack",
+      "description": "Stop staring at a blank page. Five done-for-you cover letter templates with a guide to making each one your own.",
+      "whatsInside": [
+        "5 ready-to-use templates",
+        "Strong opening line examples",
+        "How to tailor each letter",
+        "Phrases to avoid"
+      ],
+      "whoIsItFor": "Anyone writing a cover letter for a job, apprenticeship, or university application — especially those applying for the first time.",
+      "readTime": "10 min",
+      "pageCount": 10,
+      "downloadCount": 1890,
+      "fileName": "careerguide-cover-letter-pack-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-01-10",
+      "featured": false,
+      "isNew": false
+    },
+    {
+      "slug": "interview-cheat-sheet",
+      "title": "Interview Cheat Sheet",
+      "tagline": "Walk into any interview feeling prepared",
+      "category": "interview-prep",
+      "categoryLabel": "Interview Prep",
+      "format": "PDF",
+      "description": "The only interview prep you need. Top questions, the STAR method explained, and a day-of checklist — all on one sheet.",
+      "whatsInside": [
+        "Top 20 interview questions answered",
+        "STAR method explained with examples",
+        "Questions to ask the interviewer",
+        "Day-of checklist"
+      ],
+      "whoIsItFor": "Anyone preparing for a job interview, assessment centre, or apprenticeship interview — from first-timers to those returning after a break.",
+      "readTime": "8 min",
+      "pageCount": 4,
+      "downloadCount": 2760,
+      "fileName": "careerguide-interview-cheat-sheet-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-01-10",
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "slug": "understanding-pay-guide",
+      "title": "Understanding Pay Guide",
+      "tagline": "Decode your payslip and know your rights",
+      "category": "money-work",
+      "categoryLabel": "Money & Work",
+      "format": "PDF Guide",
+      "description": "Tax, National Insurance, payslips, and salary negotiation — explained in plain English for young people starting work.",
+      "whatsInside": [
+        "How payslips actually work",
+        "Tax and National Insurance explained",
+        "Understanding your workplace rights",
+        "Salary negotiation basics"
+      ],
+      "whoIsItFor": "Students and young people starting their first job or apprenticeship who want to understand their pay and rights.",
+      "readTime": "12 min",
+      "pageCount": 10,
+      "downloadCount": 1540,
+      "fileName": "careerguide-understanding-pay-guide-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-01-10",
+      "featured": false,
+      "isNew": false
+    },
+    {
+      "slug": "ai-for-students-playbook",
+      "title": "AI For Students Playbook",
+      "tagline": "Use AI tools to get ahead — ethically and effectively",
+      "category": "future-skills",
+      "categoryLabel": "Future Skills",
+      "format": "Playbook",
+      "description": "AI isn't going away. This playbook shows you what tools actually help, how to use them properly, and how to make AI a career advantage — not a shortcut.",
+      "whatsInside": [
+        "What AI tools actually do (in plain English)",
+        "The best free AI tools for students",
+        "How to use AI ethically and effectively",
+        "How to future-proof your career"
+      ],
+      "whoIsItFor": "Students of all ages who want to understand and use AI tools in their studies and job applications — no tech background needed.",
+      "readTime": "20 min",
+      "pageCount": 16,
+      "downloadCount": 980,
+      "fileName": "careerguide-ai-for-students-playbook-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-06-01",
+      "featured": false,
+      "isNew": true
+    }
+  ]
+}
