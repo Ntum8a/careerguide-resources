@@ -145,6 +145,30 @@
       "isNew": false
     },
     {
+      "slug": "understanding-the-workplace",
+      "title": "Understanding the Workplace",
+      "tagline": "Know your rights and what to expect before day one",
+      "category": "money-work",
+      "categoryLabel": "Money & Work",
+      "format": "PDF",
+      "description": "A plain-English guide to workplace policies — from contracts and holidays to grievance procedures and what HR actually does.",
+      "whatsInside": [
+        "Employment contracts explained",
+        "Holiday, sick pay, and leave entitlements",
+        "Workplace policies you need to know",
+        "What to do if something goes wrong"
+      ],
+      "whoIsItFor": "Students and young people starting their first job or apprenticeship who want to understand how the workplace actually works — before they're in it.",
+      "readTime": "10 min",
+      "pageCount": 8,
+      "downloadCount": 0,
+      "fileName": "careerguide-understanding-the-workplace-v1.pdf",
+      "version": "1.0",
+      "publishedAt": "2026-06-19",
+      "featured": false,
+      "isNew": true
+    },
+    {
       "slug": "ai-for-students-playbook",
       "title": "AI For Students Playbook",
       "tagline": "Use AI tools to get ahead — ethically and effectively",

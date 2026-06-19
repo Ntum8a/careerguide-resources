@@ -44,7 +44,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-wrap justify-center md:justify-start gap-8">
             {[
-              { value: '7', label: 'Free Resources' },
+              { value: '8', label: 'Free Resources' },
               { value: '10+', label: 'Learning Courses' },
               { value: '60+', label: 'Opportunities Listed' },
               { value: '100%', label: 'Free to Access' },
