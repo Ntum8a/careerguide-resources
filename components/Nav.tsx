@@ -27,8 +27,6 @@ export default function Nav() {
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo-icon.png" alt="CareerGuide" className="h-10 w-auto" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-white.png" alt="" aria-hidden="true" className="hidden sm:block h-7 w-auto" />
             <span className="hidden md:inline text-xs font-semibold bg-white/10 text-[var(--color-accent)] px-2 py-0.5 rounded-full">
               Resources
             </span>
