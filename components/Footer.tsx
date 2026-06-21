@@ -96,6 +96,7 @@ export default function Footer() {
           <div className="flex gap-4">
             <Link href="/about" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">About</Link>
             <Link href="/contact" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Contact</Link>
+            <a href="https://www.careerguide.network/privacy" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Privacy Policy</a>
             <a href="https://www.careerguide.network" rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/15 text-xs font-semibold text-white/60 hover:text-white hover:border-[var(--color-accent)] hover:bg-white/5 transition-all duration-200">
               ← careerguide.network
