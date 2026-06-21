@@ -47,17 +47,17 @@ export default function HomePage() {
 
       {/* Stats bar */}
       <section className="bg-[var(--color-dark-section)] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap justify-center md:justify-start gap-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="flex flex-wrap justify-center md:justify-start gap-0">
             {[
               { value: '8', label: 'Free Resources' },
               { value: '10+', label: 'Learning Courses' },
               { value: '60+', label: 'Opportunities Listed' },
               { value: '100%', label: 'Free to Access' },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-3xl font-extrabold text-[var(--color-accent)]">{stat.value}</div>
-                <div className="text-xs text-white/50 font-medium uppercase tracking-wider mt-1">{stat.label}</div>
+            ].map((stat, i) => (
+              <div key={stat.label} className={`text-center px-8 py-3 ${i < 3 ? 'border-r border-white/10' : ''}`}>
+                <div className="text-4xl font-extrabold text-[var(--color-accent)] tracking-tight">{stat.value}</div>
+                <div className="text-xs text-white/55 font-medium uppercase tracking-wider mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
