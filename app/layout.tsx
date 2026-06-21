@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description:
     'Free resources, guides, and directories to help young people become work-ready — CV templates, interview prep, apprenticeships, scholarships, and more.',
   metadataBase: new URL('https://resources.careerguide.network'),
+  icons: {
+    icon: '/logo-icon.png',
+    apple: '/logo-icon.png',
+  },
   openGraph: {
     siteName: 'CareerGuide Resources',
     locale: 'en_GB',

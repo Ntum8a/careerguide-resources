@@ -1,6 +1,30 @@
 {
   "listings": [
     {
+      "slug": "circl-leadership-coaching",
+      "title": "Fully-Funded Leadership Coaching Programme",
+      "provider": "Circl",
+      "format": "group",
+      "formatLabel": "Group Coaching",
+      "duration": "6 months",
+      "durationLabel": "6 months",
+      "sector": "various",
+      "sectorLabel": "Various Sectors",
+      "focus": "leadership",
+      "focusLabel": "Leadership & Professional Development",
+      "delivery": "hybrid",
+      "deliveryLabel": "Hybrid",
+      "description": "Circl offers a fully-funded leadership programme accredited by the Association for Coaching. You will be coached alongside professionals from Google, McKinsey, Meta, and more — completely free. Designed to build the leadership and professional skills employers actually want.",
+      "skillTags": ["Leadership", "Coaching", "Professional Development", "Networking", "Communication"],
+      "url": "https://www.circl.org",
+      "deadline": "rolling",
+      "deadlineLabel": "Rolling",
+      "lastVerified": "2026-06-21",
+      "addedAt": "2026-06-21",
+      "isNew": true,
+      "isFeatured": true
+    },
+    {
       "slug": "ten-thousand-black-interns",
       "title": "Ten Thousand Black Interns Mentoring",
       "provider": "10,000 Black Interns Foundation",
