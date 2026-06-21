@@ -46,7 +46,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats banner */}
-      <section className="relative bg-[var(--color-dark-section)] text-white overflow-hidden">
+      <section className="relative bg-[var(--color-dark-section-deep)] text-white overflow-hidden">
         {/* Glow */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-[700px] h-[200px] rounded-full opacity-20 animate-pulse-glow"
@@ -153,7 +153,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[var(--color-dark-section)]">
+      <section className="bg-[var(--color-dark-section-deep)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Not sure where to start?</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 uppercase tracking-tight">Download the Foundation Kit</h2>
