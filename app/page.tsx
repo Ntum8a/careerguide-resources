@@ -53,16 +53,16 @@ export default function HomePage() {
             style={{ background: 'radial-gradient(ellipse, #2DCFC1 0%, transparent 65%)' }} />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <div className="flex flex-wrap justify-center divide-x divide-white/10">
+          <div className="grid grid-cols-4 divide-x divide-white/10">
             {[
               { value: '8', label: 'Free Resources' },
               { value: '10+', label: 'Learning Courses' },
-              { value: '60+', label: 'Opportunities Listed' },
+              { value: '60+', label: 'Opportunities' },
               { value: '100%', label: 'Free to Access' },
             ].map((stat) => (
-              <div key={stat.label} className="px-10 py-4">
-                <div className="text-6xl md:text-7xl font-extrabold text-[var(--color-accent)] tracking-tight leading-none">{stat.value}</div>
-                <div className="text-sm text-white/55 font-medium uppercase tracking-widest mt-3">{stat.label}</div>
+              <div key={stat.label} className="px-4 md:px-10 py-4">
+                <div className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-[var(--color-accent)] tracking-tight leading-none">{stat.value}</div>
+                <div className="text-[10px] sm:text-xs text-white/55 font-medium uppercase tracking-widest mt-3">{stat.label}</div>
               </div>
             ))}
           </div>
