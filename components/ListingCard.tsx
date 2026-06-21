@@ -10,11 +10,26 @@ interface Props {
 export default function ListingCard({ listing, basePath }: Props) {
   const deadlineStatus = listing.deadline ? getDeadlineStatus(listing.deadline) : null
 
+  const isPartner = listing.isPartner === true
+
   return (
-    <div className="bg-white rounded-[var(--radius-card)] card-shadow border border-[var(--color-border)] hover:border-[var(--color-brand-teal)] hover:card-shadow-hover transition-all duration-200 flex flex-col">
+    <div className={`rounded-[var(--radius-card)] card-shadow transition-all duration-200 flex flex-col relative overflow-hidden ${
+      isPartner
+        ? 'bg-white border-2 border-[var(--color-brand-teal)] hover:card-shadow-hover'
+        : 'bg-white border border-[var(--color-border)] hover:border-[var(--color-brand-teal)] hover:card-shadow-hover'
+    }`}>
+      {isPartner && (
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--color-brand-teal)] via-[var(--color-brand)] to-[var(--color-brand-teal)]" />
+      )}
       <div className="p-5 flex flex-col flex-1">
         {/* Header badges */}
         <div className="flex flex-wrap items-center gap-2 mb-3">
+          {isPartner && (
+            <span className="text-xs font-bold bg-[var(--color-brand-teal)] text-white px-2.5 py-1 rounded-full uppercase tracking-wide flex items-center gap-1">
+              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              Partner
+            </span>
+          )}
           {listing.categoryLabel && (
             <span className="text-xs font-semibold bg-[var(--color-brand-teal-light)] text-[var(--color-brand-teal-dark)] px-2.5 py-1 rounded-full">
               {listing.categoryLabel}
