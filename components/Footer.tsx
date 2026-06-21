@@ -7,8 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-white.png" alt="CareerGuide" className="h-9 w-auto mb-3" />
+            <div className="flex items-center gap-2.5 mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-icon.png" alt="" aria-hidden="true" className="h-8 w-8" />
+              <span className="text-white font-extrabold text-xl tracking-tight">CareerGuide</span>
+            </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Free resources, courses, and opportunities to help young people become work-ready and navigate their career path with confidence.
             </p>
@@ -93,7 +96,10 @@ export default function Footer() {
           <div className="flex gap-4">
             <Link href="/about" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">About</Link>
             <Link href="/contact" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Contact</Link>
-            <a href="https://www.careerguide.network" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Main Website</a>
+            <a href="https://www.careerguide.network" rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/15 text-xs font-semibold text-white/60 hover:text-white hover:border-[var(--color-accent)] hover:bg-white/5 transition-all duration-200">
+              ← careerguide.network
+            </a>
           </div>
         </div>
       </div>
