@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ResourceCard from '@/components/ResourceCard'
+import NewsletterSignup from '@/components/NewsletterSignup'
 import { getFeaturedResources, getResources, HIDDEN_SUBCATEGORIES } from '@/lib/content'
 
 export default function HomePage() {
@@ -168,6 +169,8 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
+      <NewsletterSignup />
     </>
   )
 }
