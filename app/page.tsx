@@ -45,19 +45,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats bar */}
-      <section className="bg-[var(--color-dark-section)] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="flex flex-wrap justify-center md:justify-start gap-0">
+      {/* Stats banner */}
+      <section className="relative bg-[var(--color-dark-section)] text-white overflow-hidden">
+        {/* Glow */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-[700px] h-[200px] rounded-full opacity-20 animate-pulse-glow"
+            style={{ background: 'radial-gradient(ellipse, #2DCFC1 0%, transparent 65%)' }} />
+        </div>
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <div className="flex flex-wrap justify-center divide-x divide-white/10">
             {[
               { value: '8', label: 'Free Resources' },
               { value: '10+', label: 'Learning Courses' },
               { value: '60+', label: 'Opportunities Listed' },
               { value: '100%', label: 'Free to Access' },
-            ].map((stat, i) => (
-              <div key={stat.label} className={`text-center px-8 py-3 ${i < 3 ? 'border-r border-white/10' : ''}`}>
-                <div className="text-4xl font-extrabold text-[var(--color-accent)] tracking-tight">{stat.value}</div>
-                <div className="text-xs text-white/55 font-medium uppercase tracking-wider mt-1">{stat.label}</div>
+            ].map((stat) => (
+              <div key={stat.label} className="px-10 py-4">
+                <div className="text-6xl md:text-7xl font-extrabold text-[var(--color-accent)] tracking-tight leading-none">{stat.value}</div>
+                <div className="text-sm text-white/55 font-medium uppercase tracking-widest mt-3">{stat.label}</div>
               </div>
             ))}
           </div>
