@@ -13,13 +13,12 @@ export default function ListingCard({ listing, basePath }: Props) {
   const isPartner = listing.isPartner === true
 
   return (
-    <div className={`rounded-[var(--radius-card)] card-shadow transition-all duration-200 flex flex-col relative overflow-hidden ${
-      isPartner
-        ? 'bg-white border-2 border-[var(--color-brand-teal)] hover:card-shadow-hover'
-        : 'bg-white border border-[var(--color-border)] hover:border-[var(--color-brand-teal)] hover:card-shadow-hover'
-    }`}>
+    <div
+      className="rounded-[var(--radius-card)] card-shadow transition-all duration-200 flex flex-col relative overflow-hidden bg-white hover:card-shadow-hover"
+      style={isPartner ? { border: '2px solid var(--color-brand-teal)' } : { border: '1px solid var(--color-border)' }}
+    >
       {isPartner && (
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--color-brand-teal)] via-[var(--color-brand)] to-[var(--color-brand-teal)]" />
+        <div style={{ background: 'linear-gradient(90deg, var(--color-brand-teal), var(--color-brand), var(--color-brand-teal))', height: '3px' }} />
       )}
       <div className="p-5 flex flex-col flex-1">
         {/* Header badges */}
