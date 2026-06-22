@@ -89,6 +89,17 @@ export function getHiddenOpportunityBySlug(subcategory: HiddenSubcategory, slug:
   return getHiddenOpportunities(subcategory).find((l: any) => l.slug === slug)
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getFeaturedHiddenOpportunities(): { listing: any; subcategory: HiddenSubcategory }[] {
+  const results: { listing: any; subcategory: HiddenSubcategory }[] = []
+  for (const sub of HIDDEN_SUBCATEGORIES) {
+    for (const listing of getHiddenOpportunities(sub.slug)) {
+      if (listing.isFeatured) results.push({ listing, subcategory: sub.slug })
+    }
+  }
+  return results
+}
+
 export function formatDownloadCount(count: number): string {
   if (count >= 1000) return `${(count / 1000).toFixed(1).replace('.0', '')}k`
   return count.toString()
