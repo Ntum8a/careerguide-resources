@@ -11,8 +11,8 @@ function loadGA() {
   s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
   s.async = true
   document.head.appendChild(s)
-  window.dataLayer = window.dataLayer || []
-  function gtag(...args: unknown[]) { window.dataLayer.push(args) }
+  ;(window as unknown as Record<string, unknown[]>).dataLayer = (window as unknown as Record<string, unknown[]>).dataLayer || []
+  function gtag(...args: unknown[]) { ((window as unknown as Record<string, unknown[]>).dataLayer as unknown[]).push(args) }
   gtag('js', new Date())
   gtag('config', GA_ID)
 }
